@@ -25,7 +25,7 @@
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/db_business?characterEncoding=UTF-8&amp;useSSL=false" />
+			value="jdbc:mysql://localhost:3306/db_furniture?characterEncoding=UTF-8&amp;useSSL=false" />
 		<property name="username" value="root" />
 		<property name="password" value="123456" />
 	</bean>
@@ -49,11 +49,7 @@
 	<!-- 开启requestMapping -->
 	<mvc:annotation-driven />
 
-	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/" />
-		<property name="suffix" value=".jsp" />
-	</bean>
+	
 
 
 	<bean id="multipartResolver"
